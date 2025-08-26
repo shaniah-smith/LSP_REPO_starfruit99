@@ -1,6 +1,6 @@
 # ETL Pipeline (Assignment)
 
-**Student:** Shaniah  Smith
+**Student:** Shaniah Smith
 **Course:** LSP — Assignment 2 (Professor Woolfolk)
 
 ## How to Run
