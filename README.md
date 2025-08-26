@@ -1,7 +1,7 @@
 # ETL Pipeline (Assignment)
 
-**Student:** Shaniah  
-**Course:** LSP — Assignment (Professor Woolfolk)
+**Student:** Shaniah  Smith
+**Course:** LSP — Assignment 2 (Professor Woolfolk)
 
 ## How to Run
 - In Eclipse: right-click `ETLPipeline.java` → **Run As → Java Application**.
