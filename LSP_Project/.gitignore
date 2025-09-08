@@ -6,6 +6,6 @@
 .project
 .settings/
 
-# Don’t ignore data files (so professor can see them)
+# Don’t ignore data files
 !data/products.csv
 !data/transformed_products.csv
