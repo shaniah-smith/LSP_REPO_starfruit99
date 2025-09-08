@@ -1,1 +1,11 @@
+# Ignore compiled class files
 /bin/
+
+# Ignore IDE/project-specific files
+.classpath
+.project
+.settings/
+
+# Don’t ignore data files (so professor can see them)
+!data/products.csv
+!data/transformed_products.csv
