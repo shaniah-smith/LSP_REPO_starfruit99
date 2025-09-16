@@ -40,5 +40,11 @@ public class RowResult {
      * @param finalCategory the transformed or recategorized product category
      * @param priceRange   the price range label assigned to the product
      */
-    public RowResult(int product
-
+    public RowResult(int productId, String upperName, BigDecimal finalPrice, String finalCategory, String priceRange) {
+        this.productId = productId;
+        this.upperName = upperName;
+        this.finalPrice = finalPrice;
+        this.finalCategory = finalCategory;
+        this.priceRange = priceRange;
+    }
+}
