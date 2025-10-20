@@ -1,1 +1,86 @@
+# AI-TRANSCRIPT.txt
 
+### Exam: LSP Midterm – Fall 2025
+**Student:** Shaniah Smith  
+**Course:** Howard University – Intro to LSP (Language Software Practices)  
+**AI Tool Used:** ChatGPT (GPT-5)  
+**Date of Assistance:** October 20, 2025  
+**Purpose:** Documentation of AI assistance per exam policy.
+
+---
+
+## === QUESTION 1 ===  
+**Topic:** UML Class Design and Cohesion (Riel Heuristics)
+
+I asked ChatGPT to explain the problem with the current class structure described in Question 1, focusing on *Riel’s heuristics* and how the given UML violated “high cohesion and low coupling.”  
+ChatGPT walked me through how the classes were too tightly coupled to specific trim levels (Base, Luxury, Sport) and why that made the design inflexible if a car’s trim needed to change dynamically.  
+It suggested an improved version using **composition** rather than inheritance — specifically, adding a `Trim` class that could be swapped out at runtime and referencing it inside `Car` rather than subclassing `Car` for each trim.  
+I used that reasoning to write my essay answer describing why the current UML didn’t support dynamic trim changes and how composition would fix that problem.  
+
+**Reflection:**  
+This helped me clearly understand cohesion and flexibility in OOP design, and I re-phrased the explanation in my own words for the final essay.
+
+---
+
+## === QUESTION 2 ===  
+**Topic:** Overloaded Methods and Exception Handling
+
+I asked ChatGPT to show how to design an `AreaCalculator` class using *method overloading* for different shapes (circle, rectangle, triangle, square) while throwing exceptions for invalid inputs.  
+It gave me full code examples and explained why using one method name (`area`) improves API design compared to separate methods like `circleArea` or `rectangleArea`.  
+ChatGPT also helped me structure the `Main.java` file to print the required output lines in the exact order and format from the prompt.  
+It added an exception test to show the `IllegalArgumentException` message when passing zero.  
+
+**Reflection:**  
+I copied the logic, rewrote comments in my own style, and confirmed that each method signature compiled properly. The code now follows the rubric exactly.
+
+---
+
+## === QUESTION 3 ===  
+**Topic:** Dynamic Trim Levels with Composition
+
+For Question 3, I asked ChatGPT to explain how to *refactor* a car-trim UML so that a car’s trim level can be changed at runtime.  
+It explained that inheritance locks the behavior at compile time, while composition allows behavior changes dynamically by containing a `Trim` object.  
+ChatGPT suggested that `Car` should hold a reference to a `Trim` interface (or abstract class), with concrete classes like `BaseTrim`, `LuxuryTrim`, and `SportTrim`.  
+Then, I can simply call `car.setTrim(new LuxuryTrim())` to change trims dynamically.  
+This idea gave me the basis for my written essay answer for part (b), and I rewrote the example in my own words for clarity.
+
+**Reflection:**  
+This improved my understanding of composition vs. inheritance and why the “HAS-A” relationship is more flexible than “IS-A” for changeable properties.
+
+---
+
+## === QUESTION 4 ===  
+**Topic:** Interfaces, Abstract Classes, and Smart-Campus Devices
+
+For this question, I asked ChatGPT how to implement multiple interfaces (`Networked`, `BatteryPowered`) for devices like `DoorLock`, `Camera`, and `Thermostat`, extending from an abstract `Device` base class.  
+It provided interface templates and explained how to override required methods.  
+ChatGPT helped me ensure that `setBatteryPercent` validated input (0–100), that each subclass called `super()` in its constructor, and that the `getStatus()` output string matched the rubric format (showing connection and battery info).  
+It also confirmed that `DoorLock` and `Camera` implement both interfaces, while `Thermostat` only implements `Networked`.  
+I used that structure to write all `.java` files and test them with the provided `Main` driver class.
+
+**Reflection:**  
+This conversation helped me confirm proper Java interface syntax, inheritance structure, and exception safety so that everything compiled cleanly without modifying the provided `Main.java`.
+
+---
+
+## === QUESTION 5 ===  
+**Topic:** Algorithm Reasoning and Complexity (Essay Portion)
+
+I asked ChatGPT to explain the reasoning behind a short-answer algorithm problem involving efficiency and Big-O notation.  
+ChatGPT walked me through how to analyze loops, nested conditions, and data structures to determine overall time complexity.  
+I didn’t copy the explanation directly but rewrote the reasoning in my essay to describe *why* one approach was more efficient than another.  
+
+**Reflection:**  
+This helped me articulate the algorithm analysis in clear steps without over-complicating my answer.
+
+---
+
+## === FINAL NOTE ===  
+All ChatGPT assistance was used as a **conceptual aid** under the exam’s *open-book, open-notes* policy.  
+No code or text was submitted without revision or verification by me.  
+All explanations were rewritten in my own words and double-checked for correctness before inclusion in my exam files.
+
+---
+
+### Citations
+ChatGPT (GPT-5). *Assistance with conceptual design, UML cohesion, method overloading, Java interfaces, and algorithm complexity.* Conversation dated October 20, 2025.
