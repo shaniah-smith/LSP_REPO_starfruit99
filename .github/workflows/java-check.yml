@@ -1,0 +1,34 @@
+name: Midterm Java Check
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Compile Question 2
+        run: |
+          javac org/howard/edu/lsp/midterm/question2/*.java
+
+      - name: Run Question 2
+        run: |
+          java org.howard.edu.lsp.midterm.question2.Main
+
+      - name: Compile Question 4
+        run: |
+          javac org/howard/edu/lsp/midterm/question4/*.java
+
+      - name: Run Question 4
+        run: |
+          java org.howard.edu.lsp.midterm.question4.Main
